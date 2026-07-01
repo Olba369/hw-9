@@ -14,8 +14,8 @@ body {
   background-color: #eeeff1;
   font-family: var(--main-font);
   color: var(--text-color);
-  font-weight: var(--font-weight)
-  line-height: var(--line-height)
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
 }
 
 h1, h2, h3 {
@@ -42,7 +42,7 @@ font-size: 16px;
 }
 
 .design {
-    width: min(90% - 40px, 1100px);
+  width: min(90% - 40px, 1100px);
   margin-inline: auto;
   display: flex;
   flex-direction: column;
