@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  padding: 0;
   margin: 0px;
 }
 :root {
@@ -21,19 +22,20 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 500; /* Например, все заголовки жирные */
+  font-weight: 500;
   color: #000;
-} /* И более контрастные */
-
+}
+header {
+padding: 80px 0;
+}
 header ul {
   list-style: none;
   width: min(90% - 40px, 1100px);
   margin-inline: auto;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: start;
-  gap: 30px;
-  padding: 70px 0;
+  gap: 30px; 
   text-transform: uppercase;
 }
 
@@ -91,6 +93,7 @@ header ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  /*align-items: center;*/
   height: 250px;
   gap: 20px;
   padding: 100px 0px;
@@ -113,21 +116,23 @@ article img {
 /* icons*/
 
 .work {
+  margin-inline: auto;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 1004px;
+  text-align: center;
+  max-height: 1004px;
   background-color: white;
   padding: 100px;
 }
 .work img {
-  width: 1100px;
-  height: 600px;
+  width: min(100% - 40px, 1100px);
 }
 .work p {
-  max-width: 600px;
+  width: min(90% - 20px, 1100px);
   text-align: center;
+  margin: 40px;
 }
 footer {
   background-color: #34547a;
@@ -139,13 +144,12 @@ footer {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  align-items: left;
   width: min(90% - 40px, 1100px);
   color: white;
-  font-size: 13;
+  font-size: 13px;
   row-gap: 20px;
 }
-.footer-text h4 {
+.footer__text h4 {
   font-size: 21px;
   color: white;
 }
