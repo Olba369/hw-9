@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+:root {
+  --main-font: "Roboto", sans-serif;
+  --text-color: #727272; /* Основной цвет текста */
+  --h1-size: 48px;
+  --h3-size: 21px;
+  --font-weight: 400; /* Обычная жирность по умолчанию */
+  --line-height: 1.5;
+}
+body {
+  background-color: #eeeff1;
+  font-family: var(--main-font);
+  color: var(--text-color);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500; /* Например, все заголовки жирные */
+  color: #000;
+} /* И более контрастные */
+
+header ul {
+  list-style: none;
+  width: min(90% - 40px, 1100px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 30px;
+  padding: 70px 0;
+  text-transform: uppercase;
+}
+
+.nav a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit; /* Дополнительно: чтобы ссылка не становилась синей */
+  font-size: 16px;
+}
+
+.design {
+  width: min(90% - 40px, 1100px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 100px 0;
+}
+.design p {
+  max-width: 600px;
+  text-align: left;
+}
+
+.design__btn {
+  padding: 15px 30px;
+  background-color: #34495e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* ABOUT*/
+.about {
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 100px 0;
+  background-color: white;
+}
+.about p {
+  max-width: 600px; /* Ограничивает ширину текста, чтобы он переносился */
+}
+/* icons*/
+.wraper {
+  width: 100%;
+  background-color: #34547a;
+}
+.wraper__icons {
+  list-style: none;
+  width: min(90% - 40px, 1100px);
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 250px;
+  gap: 20px;
+  padding: 100px 0px;
+  color: white;
+}
+.wraper__icons--section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+article img {
+  height: 50px;
+  width: 50px;
+}
+.section-items {
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+}
+/* icons*/
+
+.work {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 1004px;
+  background-color: white;
+  padding: 100px;
+}
+.work img {
+  width: 1100px;
+  height: 600px;
+}
+.work p {
+  max-width: 600px;
+  text-align: center;
+}
+footer {
+  background-color: #34547a;
+  height: 151px;
+  padding: 50px;
+}
+.footer__text {
+  margin-inline: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: left;
+  width: min(90% - 40px, 1100px);
+  color: white;
+  font-size: 13;
+  row-gap: 20px;
+}
+.footer-text h4 {
+  font-size: 21px;
+  color: white;
+}
